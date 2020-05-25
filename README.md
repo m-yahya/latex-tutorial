@@ -4,11 +4,12 @@ A complete step by step guide to learn LaTeX
 
 <!-- MDTOC maxdepth:6 firsth1:0 numbering:1 flatten:0 bullets:0 updateOnSave:1 -->
 
-1. [Installation](#installation)  
-   &emsp;1.1. [Download and Install MiKTeX](#download-and-install-miktex)  
-   &emsp;1.2. [Download and Install Texmaker](#download-and-install-texmaker)
-2. [Composing First Document](#composing-first-document)
-3. [Contributing](#contributing)
+1. [Installation](#installation)   
+&emsp;1.1. [Download and Install MiKTeX](#download-and-install-miktex)   
+&emsp;1.2. [Download and Install Texmaker](#download-and-install-texmaker)   
+2. [Composing First Document](#composing-first-document)   
+3. [Contributing](#contributing)   
+4. [License](#license)   
 
 <!-- /MDTOC -->
 
@@ -49,3 +50,7 @@ Pull requests are welcome.
 4. Commit the changes: git commit -m "add commit message"
 5. push to the branch: git push origin new-feature-branch
 6. Submit a pull request.
+
+## License
+
+This project is licensed under the [MIT](./LICENSE) License.
