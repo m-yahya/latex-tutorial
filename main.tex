@@ -1,16 +1,9 @@
 \documentclass[12pt, letter]{article}
 \usepackage[utf8]{inputenc}
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,
-    urlcolor=blue,
-}
-\setlength\parindent{0pt}
 
-\title{Getting Started with \LaTeX}
-\author{Muhammad Yahya \\
-\href{mailto:yahya_gis@hotmail.com}{yahya\_gis@hotmail.com} }
-\date{Last modified on: \\ \today}
+\title{This is Title of the Document}
+\author{Author's Name}
+\date{\today}
 
 \begin{document}
 
@@ -19,157 +12,12 @@
  \thispagestyle{empty}
 \end{titlepage}
 
-\tableofcontents
-\newpage
+\section{This is First Level Heading}
+This is the first level heading.
 
-\section{What is GIS – Definition?}
+\subsection{This is Second Level Heading}
+This is the second level heading.
 
-The following article is retrieved from \href{https://grindgis.com/what-is-gis/what-is-gis-definition}{Grind GIS}.
-
-\medskip
-
-Geographic Information System (GIS) is a computer system build to capture, store, manipulate, analyze, manage and display all kinds of spatial or geographical data. GIS application are tools that allow end users to perform spatial query, analysis, edit spatial data and create hard copy maps. In simple way GIS can be define as an image that is referenced to the earth or has x and y coordinate and it’s attribute values are stored in the table. These x and y coordinates are based on different projection system and there are various types of projection system. Most of the time GIS is used to create maps and to print. To perform the basic task in GIS, layers are combined, edited and designed.
-
-\medskip
-
-GIS can be used to solve the location based question such as “What is located here” or Where to find particular features? GIS User can retrieve the value from the map, such as how much is the forest area on the land use map. This is done using the query builder tool. Next important features of the GIS is the capability to combine different layers to show new information. For example, you can combine elevation data, river data, land use data and many more to show information about the landscape of the area. From map you can tell where is high lands or where is the best place to build house, which has the river view . GIS helps to find new information.
-
-
-\section{How GIS Works:}
-
-\begin{itemize}
-
- \item Visualizing Data: The geographic data that is stored in the databases are displayed in the GIS software.
- \item Combining Data: Layers are combined to form a maps of desire.
- \item The Query: To search the value in the layer or making a geographic queries.
-
-\end{itemize}
-
-\subsection {Definition by others:}
-
-\textit{A geographic information system (GIS) lets us visualize, question, analyze, and interpret data to understand relationships, patterns, and trends. (ESRI)}
-
-\medskip
-
-\textit{In the strictest sense, a GIS is a computer system capable of assembling, storing, manipulating, and displaying geographically referenced information (that is data identified according to their locations). (USGS)}
-
-\section {Advantage of GIS:}
-
-\begin{itemize}
-
- \item Better decision made by government people
- \item Improve decision making with the help of layered information
- \item Citizen engagement due to better system
- \item Help to identify communities that is under risk or lacking infrastructure
- \item Helps in identifying criminology matters
- \item Better management of natural resources
- \item Better communication during emergency situation
- \item Cost savings due to better decision
- \item Finding different kinds of trends within the community
- \item Planning the demographic changes
-
-\end{itemize}
-
-\section{History of GIS:}
-
-Modern GIS has seen series of development. GIS has evolved with the computer system. Here are the brief events that has happened for the development of the GIS system.
-
-\medskip
-
-\textbf{Year 1854} – The term GIS that used scientific method to create maps was used by John Snow in 1854. He used points on London residential map to plot outbreak of Cholera.
-
-\medskip
-
-\textbf{Year 1960} – Modern computerized GIS system began in year 1960.
-
-\medskip
-
-\textbf{Year 1962} – Dr. Roger Tomlinson created and developed Canadian Geographic Information System (CGIS) to store, analyze and manipulate data that was collected for the Canada Land Inventory (CLI). This software had the capacity to overlay, measurement and digitizing (converting scan hardcopy map to digital data). It is never provided in commercial format but Dr. Tomlinson is the father of GIS.
-
-\medskip
-
-\textbf{Year 1980} – This period saw rise of commercial GIS software’s like M\&S Computing, Environmental Systems Research Institute (ESRI) and Computer Aided Resource Information System (CARIS). These all software were similar to CGIS with more functionality and user-friendliness. Among all the above the most popular today is ESRI products like ArcGIS, ArcView which hold almost 80 \% of global market.
-
-\section{Component of GIS:}
-
-Hardware: Hardware is the physical component of the computer and GIS runs on it. Hardware may be hard disk, processor, motherboard and so on. All these hardware work together to function as a computer. GIS software run on these hardware. Computer can be standalone called desktop or server based. GIS can run on both of them.
-
-\subsection{Software:}
-
-GIS Software provides tools and functions to input and store spatial data or geographic data. It provides tool to perform geographic query, run analysis model and display geographic data in the map form. GIS software uses Relation Database Management System (RDBMS) to store the geographic data. Software talks with the database to perform geographic query.
-
-\subsection{Data:}
-
-Data are the fuel for the GIS and the most important and expensive component. Geographic data are the combination of physical features and it’s information which is stored in the tables. These tables are maintained by the RDBMS. The process of capturing the geographic data are called digitization which is the most tedious job. It is the process of converting scanned hardcopy maps into the digital format. Digitization is done by tracing the lines along the geographic features for example to capture a building you will trace around the building on the image.
-
-\subsection{People:}
-
-People are the user of the GIS system.
-People use all above three component to run a GIS system. Today’s computer are fast and user friendly which makes it easy to perform geographic queries, analysis and displaying maps. Today everybody uses GIS to perform their daily job.
-
-\section{Types of GIS Data:}
-
-\subsection{Raster Data:}
-
-Raster data store information of features in cell based manner. Satellite images, photogrammetry and scanned maps are all raster based data. Raster model are used to store data which varies continuously as in aerial photography, a satellite image or elevation values (DEM- Digital Elevation Model).
-
-\subsection{Vector Data:}
-
-There are three types of vector data, points, lines and polygons. These data are created by digitizing the base data. They store information in x, y coordinates. Vectors models are used to store data which have discrete boundaries like country borders, land parcels and roads.
-
-\subsection{Advantage and Disadvantage}
-
-Advantage and Disadvantage of using raster and vector Data
-
-\begin{itemize}
-
- \item Raster data model record value of all the points of the area covered which required more data storage than model represented by the vector model.
- \item Raster data is less expensive to create computationally compare to vector graphics.
- \item Raster data has issue while overlaying multiple images.
- \item Vector data are easily overlaid, for example overlaying roads, rivers, land use are easier than raster data.
- \item Vector data are easier to scale, re-project or register.
- \item Vector data are more compatible with the relational database management system.
- \item Vector file sizes are way smaller than raster image file sizes.
- \item Vector data are easier to update like adding river stream but has to be recreated for the raster image.
-\end{itemize}
-
-\subsubsection{Raster Formats}
-
-\begin{itemize}
-
- \item \textbf{ADRG} – ARC Digitized Raster Graphics
- \item \textbf{RPF} – Raster Product Format, military
- \item \textbf{DRG} – Digital raster graphic
- \item \textbf{ECRG} – Enhanced Compressed ARC Raster Graphics
- \item \textbf{ECW} – Enhanced Compressed Wavelet (from ERDAS
- \item \textbf{Esri grid} – ASCII raster formats used by ESRI
- \item \textbf{GeoTIFF} – TIFF variant enriched with GIS relevant metadata
- \item \textbf{IMG} – image file format used by ERDAS
- \item \textbf{JPEG2000} – Open-source raster format
- \item \textbf{MrSID} – Multi-Resolution Seamless Image Database
-\end{itemize}
-
-\subsubsection{Vector Formats}
-
-\begin{itemize}
-
- \item \textbf{AutoCAD DXF} – AutoCAD DXF format by Autodesk
-       Cartesian coordinate system (XYZ) – simple point cloud
- \item \textbf{DLG} – Digital Line Graph (USGS format)
- \item \textbf{GML} – Geography Markup Language – Open GIS format used for exchanging GIS data
- \item \textbf{GeoJSON} – a lightweight format based on JSON, used by many open source GIS packages
- \item \textbf{GeoMedia} – Intergraph’s Microsoft Access based format for spatial vector storage
- \item \textbf{ISFC} – Intergraph’s MicroStation based CAD solution
- \item \textbf{Keyhole Markup Language KML} – Keyhole Markup Language a XML based
- \item \textbf{MapInfo TAB format} – MapInfo’s vector data format
- \item \textbf{NTF} – National Transfer Format
- \item \textbf{Spatialite} – is a spatial extension to SQLite,
- \item \textbf{Shapefile} – Most popular vector data developed by Esri
- \item \textbf{Simple Features} – specification for vector data
- \item \textbf{SOSI} – a spatial data format used for all public exchange of spatial data in Norway
- \item \textbf{Spatial Data File} – Autodesk’s high-performance geodatabase format
- \item \textbf{TIGER} – Topologically Integrated Geographic Encoding and Referencing
- \item \textbf{(VPF)} – Vector Product Format
-\end{itemize}
-
+\subsubsection{This is Third Level Heading}
+This is the third level heading.
 \end{document}
