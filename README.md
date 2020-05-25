@@ -11,12 +11,14 @@ This part will explain the LaTeX document structure and how to create a title pa
 
 ## The Layout of a LaTeX File
 
-To create a document in LaTeX, we need a plain text file that ends with the extension '_.tex_'. This file contains the LaTeX code and the actual contents of the document. The LaTeX compiler takes _.tex_ as input and compiles it into _.pdf_ file.
+To create a document in LaTeX, we need a plain text file that ends with the extension '_.tex_'. This file contains the LaTeX code (the LaTeX commands) and the actual contents of the document. The LaTeX commands are used to define how the document should be formatted and every command starts with the backslash \. The typical structure of the LaTeX command is `\commandname{options}`. 
+
+The LaTeX compiler takes _.tex_ as input and compiles it into _.pdf_ file.
 
 The _.tex_ file can be divided into two main parts:
 
 1. The preamble of a Document
-2. Document
+2. The Document
 
 Let's take a look at the contents of a very simple _.tex_ file:
 
@@ -29,11 +31,22 @@ Let's take a look at the contents of a very simple _.tex_ file:
 \end{document}
 ```
 
-The part of the _.tex_ file before the `\begin{document}` is called the preamble. In LaTeX, we use commands to define how the document should be formatted and every command starts with the backslash \. The typical structure of the LaTeX command is `\commandname{options}`. The preamble part of the _.tex_ file contains commands, load extra packages, and set different parameters. In the above block of code we define document class as an article.
+### The Preamble
 
-Other options for the document class are report, letter, book, and beamer. The additional parameters can be defined inside the brackets in a comma-separated fashion. Here the font and paper size are defined.
+The part of the _.tex_ file before the `\begin{document}` is called the preamble. The preamble part of the _.tex_ file contains commands, load extra packages, and set different parameters. In the above block of code we define document class as an article. Other options for the document class are: 
 
-The actual text of the document, including paragraphs, tables and images etc., goes between the `\begin{document}` and `\end{document}`. Update the above block of code as follows:
+* report
+* letter
+* book
+* beamer
+
+The additional parameters can be defined inside the brackets in a comma-separated fashion. For example in the command `\documentclass[12pt, letter]{article}`, the font and paper size are defined.
+
+### The Document 
+
+The actual text of the document, including paragraphs, tables and images etc., goes between the `\begin{document}` and `\end{document}`. 
+
+Update the above block of code as follows:
 
 ```
 \documentclass[12pt, letter]{article}
@@ -51,7 +64,7 @@ The actual text of the document, including paragraphs, tables and images etc., g
 \end{document}
 ```
 
-Compile the document in the editor and have a look at the pdf document.
+Compile the document in the editor and have a look at the _pdf_ document.
 
 ## The Title Page
 
@@ -82,4 +95,4 @@ By default the article class starts page numbering from the title page. However 
 \end{titlepage}
 ```
 
-In the date command you can use the current date instead of the manual one by using the `\data{\today}` command.
+In the date command you can use the current date instead of the manual one by using the `\date{\today}` command.
