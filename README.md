@@ -176,7 +176,7 @@ In the above block of code:
 We can wrap text around the images especially in the case when there are multiple small images in the document. To achieve this, we will make use of another environment called `wrapfigure`. Let's have a look at the following block of code to wrap the text around the images.
 
 ```
- \begin{wrapfigure}{r}{0.48\textwidth} %this figure is placed at the right
+ \begin{wrapfigure}{r}{0.48\textwidth}
      \centering
      \includegraphics[width=0.4\textwidth]{latex-logo}
      \caption{\LaTeX\ logo}
