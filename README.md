@@ -1,6 +1,6 @@
 # LaTeX Tutorial
 
-This part will explain how to add images, create tables and lists
+This part will explain how to add images
 
 <!-- MDTOC maxdepth:6 firsth1:0 numbering:1 flatten:0 bullets:0 updateOnSave:1 -->
 
