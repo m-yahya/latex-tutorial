@@ -2,6 +2,20 @@
 
 This part will explain how to create tables and lists
 
+<!-- MDTOC maxdepth:6 firsth1:0 numbering:1 flatten:0 bullets:0 updateOnSave:1 -->
+
+1. [Create Tables](#create-tables)   
+&emsp;1.1. [Positioning, Caption, Label and Reference the Table](#positioning-caption-label-and-reference-the-table)   
+2. [Create Lists](#create-lists)   
+&emsp;2.1. [Un-ordered Lists](#un-ordered-lists)   
+&emsp;2.2. [Ordered Lists](#ordered-lists)   
+&emsp;2.3. [Nested Lists](#nested-lists)   
+&emsp;2.4. [Customizing List Style](#customizing-list-style)   
+3. [Contributing](#contributing)   
+4. [License](#license)   
+
+<!-- /MDTOC -->
+
 ## Create Tables
 
 In `LaTeX`, we can use `table`, `tabular`, or a combination of both environments to create tables. The `table` environment provides additional functionality such as positioning, caption, label, and reference for the table. Whereas, the actual contents go inside the `tabular` environment.
@@ -142,7 +156,7 @@ By default, LaTeX uses a black dot for bullet points in an un-numbered list. Thi
 
 **Ordered List**
 
-The numbering style for the ordered list can be changed to `Roman`, `Arabic`, and `Alphabetical` using the `enumitem` package as given below. 
+The numbering style for the ordered list can be changed to `Roman`, `Arabic`, and `Alphabetical` using the `enumitem` package as given below.
 
 ```
 \documentclass[12pt, letter]{article}
