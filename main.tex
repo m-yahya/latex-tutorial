@@ -1,10 +1,7 @@
 \documentclass[12pt, letter]{article}
 \usepackage[utf8]{inputenc}
 
-\usepackage{graphicx}
-\usepackage{subcaption}
-\usepackage{wrapfig}
-\graphicspath{ {images/} }
+\usepackage{enumitem}
 
 \setlength\parindent{0pt}
 
@@ -62,10 +59,33 @@ Its also possible to create nested lists in \LaTeX.
 \end{enumerate}
 
 \subsection{Customizing List Style}
+
+By defualt, LaTeX uses black dot for bullet points in un-numbered list. This default behaviour can be changed to bold dash, dash and asterik in the following way:
+
 \begin{itemize}
-	\item[--] Bold Dash item
-    \item[$-$] Dash item
+	\item[--] Dash item
+    \item[$-$] Bold Dash item
     \item[$\ast$] Asterisk item
 \end{itemize}
+
+The numbering style for ordered list can be changed to \textit{roman}, \textit{arabic} and \textit{alph} as follows:
+
+\begin{enumerate}[label=\roman*]
+  \item The first item with Roman numbers
+  \item The second item with Roman numbers
+  \item The third item with Roman numbers
+\end{enumerate}
+
+\begin{enumerate}[label=(\arabic*)]
+  \item The first item with Arabic numbers
+  \item The second item with Arabic numbers
+   \item The third item with Arabic numbers
+\end{enumerate}
+
+\begin{enumerate}[label=(\alph*)]
+  \item The first item with Alphabetical numbers
+  \item The second item with Alphabetical numbers
+   \item The third item with Alphabetical numbers
+\end{enumerate}
 
 \end{document}
