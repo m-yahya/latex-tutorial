@@ -1,3 +1,4 @@
+
 \documentclass[12pt, letter]{article}
 \usepackage[utf8]{inputenc}
 
@@ -10,62 +11,86 @@
 
 \begin{document}
 
-\listoftables
+\listoffigures
 \newpage
+%\section{Add Images}
 
-\section{Create Table}
-A simple table can be created using the `tabular` environment which is the default method to create tables in LaTeX. The \ref{table1} is an example of  a very simple table.
+This is the simplest way to add images to the \LaTeX\ document with custom width and height.
 
-\begin{table}[h!]
-  \centering
-  \caption{A Simple Table with Caption and Label}
-  \label{table1}
-  \begin{tabular}{ c c c }
-    \hline
-    row1-col1 & row1-col1 & row1-col1 \\
-    \hline
-    row1-col1 & row1-col2 & row1-col3 \\
-    row2-col1 & row2-col2 & row2-col3 \\
-    row3-col1 & row3-col2 & row3-col3 \\
-    \hline
-  \end{tabular}
-\end{table}
+\medskip
 
-\section{Create Lists}
-The following is an un-ordered list of items.
+\includegraphics[width=5cm, height=4cm]{latex-logo}
 
-\begin{itemize}
-  \item The un-unmbered item in the list
-  \item Another un-numbered item in the lists
-  \item One more un-numbered item in the list
-\end{itemize}
+The following command will set the image width to the width of the text in the document.
 
-The following is an example of numbered list.
+\medskip
 
-\begin{enumerate}
-  \item The first item in the list
-  \item The second item in the list
-  \item The third item in the list
-\end{enumerate}
+\includegraphics[width=\textwidth]{latex-logo}
 
-Its also possible to create nested lists in \LaTeX.
+\medskip
 
-\begin{enumerate}
-  \item The first item in the list
-  \item The second item in the list
-        \begin{enumerate}
-          \item sub item a
-          \item sub item b
-          \item sub item c
-        \end{enumerate}
-   \item The third item in the list
-\end{enumerate}
+%\subsection{Using the Figure Environment}
 
-\subsection{Customizing List Style}
-\begin{itemize}
-	\item[--] Bold Dash item
-    \item[$-$] Dash item
-    \item[$\ast$] Asterisk item
-\end{itemize}
+The following image is added using the figure environment and has a caption.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{latex-logo}
+	\caption{This is \LaTeX\ project logo}
+	\label{logo}
+\end{figure}
+
+The figure \ref{logo} show the \LaTeX\ project logo on page \pageref{logo}.
+   
+   
+%\subsection{Adding Multiple Images}
+This is how we can add multiple images in the document.
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}[b]{0.4\linewidth}
+		\includegraphics[width=\linewidth]{latex-logo}
+		\caption{\LaTeX\ logo}
+		\label{logo1}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.4\linewidth}
+		\includegraphics[width=\linewidth]{latex-logo}
+		\caption{Same \LaTeX\ logo}
+		\label{logo2}
+	\end{subfigure}
+	
+	\caption{\LaTeX\ logo}
+	\label{logo3}
+	
+\end{figure}
+
+We have added figures \ref{logo1} and \ref{logo2} in the figure \ref{logo3} on page \pageref{logo3}.
+ 
+\medskip
+
+%\subsection{Wrapping Text around the Image}
+
+The following example shows how we can wrap text around images.
+
+\medskip
+
+\begin{wrapfigure}{r}{0.48\textwidth} %this figure is placed at the right
+	\centering
+	\includegraphics[width=0.4\textwidth]{latex-logo}
+	\caption{\LaTeX\ logo}
+	\label{logo4}
+\end{wrapfigure}
+
+We can wrap text around the images especially in case when there are multiple small images in the document. To achieve this, we will make use of another environment called 'wrapfigure'. Let's have a look at the following block of code to wrap the text around the images.
+
+\begin{wrapfigure}{l}{0.48\textwidth}
+	\centering
+	\includegraphics[width=0.4\textwidth]{latex-logo}
+	\caption{\LaTeX\ logo}
+	\label{logo5}
+\end{wrapfigure}
+
+Other placement specifiers that can be used are 'l', 'i', and 'o' which will place the images left to the text, inside the edge, and outside the edge respectively.
 
 \end{document}
