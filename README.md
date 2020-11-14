@@ -4,9 +4,9 @@ This part will explain how to create tables and lists
 
 ## Create Tables
 
-In `LaTeX`, we can use `table`, `tabular` or a combination of both environments to create tables. The `table` environment provides additional functionality such as positioning, caption, label and reference for the table. Whereas, the actual contents go inside the `tabular` environment.
+In `LaTeX`, we can use `table`, `tabular`, or a combination of both environments to create tables. The `table` environment provides additional functionality such as positioning, caption, label, and reference for the table. Whereas, the actual contents go inside the `tabular` environment.
 
-We will start creating a very simplest table and then gradually develop it according to our choice. A simple table can be created using the `tabular` environment which is the default method to create tables in LaTeX. The following block of code creates a very simple table with three columns and text centered.
+We will start creating the very simplest table and then gradually develop it according to our choice. A simple table can be created using the `tabular` environment which is the default method to create tables in LaTeX. The following block of code creates a very simple table with three columns and text-centered.
 
 ```
 \begin{center}
@@ -17,9 +17,9 @@ We will start creating a very simplest table and then gradually develop it accor
 \end{center}
 ```
 
-The `{ c c c }` specify the number of columns and position of text inside the columns. We can also use `l` and `r` to align the text to left and right respectively. The `&` is used to mark the column and `\\` is used to insert a new row.
+The `{ c c c }` specifies the number of columns and position of text inside the columns. We can also use `l` and `r` to align the text to left and right respectively. The `&` is used to mark the column and `\\` is used to insert a new row.
 
-Let's add some styles to our table to keep the information organized. We will add vertical lines to the columns to seprate them from each others by using `{ |c|c|c| }`. Also, we will add horizontal line at the top and bottom of the table with the use of `\hline`.
+Let's add some styles to our table to keep the information organized. We will add vertical lines to the columns to separate them from each other by using `{ |c|c|c| }`. Also, we will add a horizontal line at the top and bottom of the table with the use of `\hline`.
 
 The code at this point will look like this:
 
@@ -37,7 +37,7 @@ The code at this point will look like this:
 
 ### Positioning, Caption, Label and Reference the Table
 
-To add additional features like positioning, caption, label and reference the table, we will be using `table` environment that acts like a wrapper for the `tabular` environment.
+To add additional features like positioning, caption, label, and reference the table, we will be using `table` environment that acts as a wrapper for the `tabular` environment.
 
 For positioning the table, we need to put the table inside `table` float environment.
 
@@ -54,22 +54,22 @@ For positioning the table, we need to put the table inside `table` float environ
 \end{table}
 ```
 
-`[h!]` will place tha table here overriding the default LaTeX behaviour. You may find the details of other specefiers [here](https://github.com/m-yahya/latex-tutorial/tree/02-insert-images#using-the-figure-environment).
+`[h!]` will place the table here overriding the default LaTeX behavior. You may find the details of other specifiers [here](https://github.com/m-yahya/latex-tutorial/tree/02-insert-images#using-the-figure-environment).
 
-Similary, we can add caption and label using `\caption{}` and `label{}` commands respectively within the same `table` environment. The `\ref` and `\label` then can be used to reference the table inside the document.
+Similarly, we can add a caption and label using `\caption{}` and `label{}` commands respectively within the same `table` environment. The `\ref` and `\label` then can be used to reference the table inside the document.
 
 ```
 \begin{table}[h!]
-	\centering
-	\caption{A Simple Table with Caption and Label}
-	\label{table1}
-	\begin{tabular}{ |c|c|c| }
-		\hline
-		aa & bb & cc \\
-		\hline
-		11 & 22 & 33 \\
-		\hline
-	\end{tabular}
+    \centering
+    \caption{A Simple Table with Caption and Label}
+    \label{table1}
+    \begin{tabular}{ |c|c|c| }
+        \hline
+        aa & bb & cc \\
+        \hline
+        11 & 22 & 33 \\
+        \hline
+    \end{tabular}
 \end{table}
 ```
 
@@ -79,21 +79,21 @@ Finally, create a list of tables by using the `\listoftables` after the `\begin{
 
 In this section, we will take a look to create different types of lists and how to customize list styles.
 
-In general, we can create following different types of lists in `LaTeX`:
+In general, we can create the following different types of lists in `LaTeX`:
 
-* Un-ordered lists
+* Unordered lists
 * Ordered lists
 * Nested lists
 
 ### Un-ordered Lists
 
-In LaTeX, un-ordered list is created using the `itemize` environment and then place each entery inside the environment using `\item`.
+In LaTeX, an unordered list is created using the `itemize` environment and then place each entry inside the environment using `\item`.
 
 ```
 \begin{itemize}
-	\item The un-unmbered item in the list
-	\item Another un-numbered item in the list
-	\item One more un-numbered item in the list
+    \item The un-numbered item in the list
+    \item Another un-numbered item in the list
+    \item One more un-numbered item in the list
 \end{itemize}
 ```
 
@@ -103,46 +103,46 @@ An ordered list can be created using the `enumerate` environment and then placin
 
 ```
 \begin{enumerate}
-	\item The first item in the list
-	\item The second item in the list
-	\item The third item in the list
+    \item The first item in the list
+    \item The second item in the list
+    \item The third item in the list
 \end{enumerate}
 ```
 
 ### Nested Lists
 
-In `LaTex`, a list can contain another list as its item. In other words, we can create nested lists in the LaTeX. The following block of code shows an example of nested list:
+In `LaTex`, a list can contain another list as its item. In other words, we can create nested lists in LaTeX. The following block of code shows an example of a nested list:
 
 ```
 \begin{enumerate}
-	\item The first item in the list
-	\item The second item in the list
-	      \begin{enumerate}
-	      	\item sub item a
-	      	\item sub item b
-	      	\item sub item c
-	      \end{enumerate}
-	\item The third item in the list
+    \item The first item in the list
+    \item The second item in the list
+          \begin{enumerate}
+            \item sub-item a
+            \item sub-item b
+            \item sub-item c
+          \end{enumerate}
+    \item The third item in the list
 \end{enumerate}
 ```
 
 ### Customizing List Style
 
-**Un-ordered List**
+**Unordered List**
 
-By defualt, LaTeX uses black dot for bullet points in un-numbered list. This default behaviour can be changed to bold dash, dash and asterik in the following way:
+By default, LaTeX uses a black dot for bullet points in an un-numbered list. This default behavior can be changed to bold dash, dash, and asterisk in the following way:
 
 ```
 \begin{itemize}
-	\item[--] Dash item
-	\item[$-$] Bold Dash item
-	\item[$\ast$] Asterisk item
+    \item[--] Dash item
+    \item[$-$] Bold Dash item
+    \item[$\ast$] Asterisk item
 \end{itemize}
 ```
 
 **Ordered List**
 
-The numbering style for ordered list can be changed to `Roman`, `Arabic` and `Alphabetical` using the `enumitem` package as given below. 
+The numbering style for the ordered list can be changed to `Roman`, `Arabic`, and `Alphabetical` using the `enumitem` package as given below. 
 
 ```
 \documentclass[12pt, letter]{article}
@@ -153,21 +153,21 @@ The numbering style for ordered list can be changed to `Roman`, `Arabic` and `Al
 
 
 \begin{enumerate}[label=\roman*]
-	\item The first item with Roman numbers
-	\item The second item with Roman numbers
-	\item The third item with Roman numbers
+    \item The first item with Roman numbers
+    \item The second item with Roman numbers
+    \item The third item with Roman numbers
 \end{enumerate}
 
 \begin{enumerate}[label=(\arabic*)]
-	\item The first item with Arabic numbers
-	\item The second item with Arabic numbers
-	\item The third item with Arabic numbers
+    \item The first item with Arabic numbers
+    \item The second item with Arabic numbers
+    \item The third item with Arabic numbers
 \end{enumerate}
 
 \begin{enumerate}[label=(\alph*)]
-	\item The first item with Alphabetical numbers
-	\item The second item with Alphabetical numbers
-	\item The third item with Alphabetical numbers
+    \item The first item with Alphabetical numbers
+    \item The second item with Alphabetical numbers
+    \item The third item with Alphabetical numbers
 \end{enumerate}
 
 \end{document}
